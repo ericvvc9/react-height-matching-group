@@ -60,7 +60,7 @@ export default class HeightMatchingGroup extends Component {
     const els = this.container.querySelectorAll(this.props.selector);
     els.forEach(el => { el.style.height = null; });
     const maxHeight = this.getMaxHeight(els);
-    els.forEach(el => { el.style.height = `${maxHeight}px`; });
+    els.forEach(el => { el.style.minHeight = `${maxHeight}px`; });
   }
 
   render = () => (
